@@ -133,7 +133,7 @@ margin: auto;
 }
 
 
-.facebook:hover, .twitter:hover,.instagram:hover, .email:hover  {
+.facebook:hover, .twitter:hover, .instagram:hover, .email:hover, .zillow:hover  {
   transform: scale(1.2);
 }
 
@@ -164,6 +164,12 @@ margin: auto;
 
 
 .instagram a {
+  color:  #e73863;
+  font-size: 48px;
+ transition: all .2s ease-in-out;
+}
+
+.zillow a {
   color:  #e73863;
   font-size: 48px;
  transition: all .2s ease-in-out;
