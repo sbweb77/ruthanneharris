@@ -120,15 +120,17 @@ width: 100%;
   margin-left: 30px;
 }
 
-
-.facebook, .twitter, .instagram, .email {
+.facebook, .twitter {
   width: 2rem;
   height: 2rem;
 }
 
-.email a {
-  color: var(--r);
-  font-size: 48px;
+
+.email a,
+.facebook a,
+.twitter a,
+.instagram a,
+.zillow a {
  transition: all .2s ease-in-out;
 }
 
@@ -137,43 +139,8 @@ width: 100%;
   transform: scale(1.2);
 }
 
-.fa.fa-facebook, .fa.fa-twitter, .fa.fa-instagram, .fa.fa-envelope{
-  font-size: 2.25rem;
-}
-
-/** Facebook **/
-
-.facebook a {
-  color:  #3b5998;
-  font-size: 48px;
- transition: all .2s ease-in-out;
-}
-
-/** Twitter **/
 
 
-
-.twitter a {
-  color:  #00aced;
-  font-size: 48px;
- transition: all .2s ease-in-out;
-}
-
-/** Instagram **/
-
-
-
-.instagram a {
-  color:  #e73863;
-  font-size: 48px;
- transition: all .2s ease-in-out;
-}
-
-.zillow a {
-  color:  #e73863;
-  font-size: 48px;
- transition: all .2s ease-in-out;
-}
 
 
 
