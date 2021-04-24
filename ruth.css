@@ -63,31 +63,37 @@ body{
   font-size: 1.5rem;
 }
 
-
-
-
-
 .me {
   display: grid;
   grid-template-columns: 1fr;
   padding: 5%;
-
 }
 
-.aboutme{
+.aboutme, .test{
   text-align: justify;
-  align-self: flex-end;
   padding: 5%;
   }
 
-  .me h2{
+.me h2, .test h2, .card h2{
     max-width: fit-content;
     font-size: 2rem;
     border-bottom: 1px solid var(--g);
+  }
+
+ .me h2{
     margin-left: auto;
     margin-right: 5%;
   }
-  
+
+  .card h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .test h2{
+    margin-left: 5%;
+  }
+
 .myphoto{
   min-width: 250px;
 margin: auto;
@@ -134,15 +140,9 @@ width: 100%;
  transition: all .2s ease-in-out;
 }
 
-
 .facebook:hover, .twitter:hover, .instagram:hover, .email:hover, .zillow:hover  {
   transform: scale(1.2);
 }
-
-
-
-
-
 
 #social ul li {
   transition: ease .3s;
@@ -156,10 +156,7 @@ width: 100%;
   opacity: 1;
 }
 
-
-
-
-  .button{
+.button{
     border-radius: 1000px;
     padding:       1.2rem 2rem;
     margin-top:20px;
@@ -174,22 +171,17 @@ width: 100%;
     border-color:  var(--white);
     color:   var(--w);
     background-color: var(--rt);
-        }
+     }
         
-    .button:hover {
-        background:   var(--r);
-        }
-
-
-
-
+.button:hover {
+  background:   var(--r);
+   }
 
         /* resources styles */
 .resources {
   padding: 2rem;
-  /*background-color: var(--r);*/
   background-color: #f0f0f0;
-  border-top: 1px solid var(--r);
+ border-top: 1px solid var(--r);
   border-bottom: 1px solid var(--r);
 }
 
@@ -209,14 +201,6 @@ width: 100%;
   background-color: white;
 }
 
-.card h2 {
-  max-width: fit-content;
-  font-size: 2rem;
-  border-bottom: 1px solid var(--g);
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .resources > ul > li > p {
   font-size: 1.25rem;
   line-height: 1.75;
@@ -230,28 +214,14 @@ width: 100%;
   text-align: ceter;
 }
 
-
 .end {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   padding: 5%;
 }
-
-.test{
-  text-align: justify;
-  padding: 5%;
-  }
   
-  .test h2{
-    max-width: fit-content;
-    font-size: 2rem;
-    border-bottom: 1px solid var(--g);
-    margin-left: 5%;
-
-  }
-  
-  .credit{
+.credit{
     text-align: right;
     font-weight: 700;
     font-size: 1.1rem;
@@ -265,12 +235,10 @@ width: 100%;
   text-align: center;
   padding: 5%;
   clip-path: polygon(100% 0%, 100% 62%, 50% 100%, 0% 100%, 0% 38%, 50% 0%);
-
 }
 
 .end-contact h2{
 font-size: 2rem;
-
 }
 
 .end-contact a{
@@ -279,11 +247,6 @@ font-size: 2rem;
   text-decoration: none;
   padding: 5%;
   font-weight: 550;
-
-}
-
-.end-contact img{
-  max-height: 2rem;
 }
 
 .middle{
@@ -291,13 +254,13 @@ font-size: 2rem;
   margin: auto;
 }
 
-
 .footer{
   background-color: var(--g);
   color: var(--w);
   text-align: center;
   padding: 1%;
 }
+
 .footer img{
 height: 2rem;
 }
@@ -306,19 +269,18 @@ height: 2rem;
   {
     .resources a, .social a {
       font-size: 1.1rem;
-    }
+       }
 
     .me {
       grid-template-columns: 1fr 2fr;
-    }
+        }
 
     .myphoto{
       min-width: 250px;
       margin: auto 1% auto auto;
-    }
+            }
 
     .end {
-
       grid-template-columns: 2fr 1fr;
-  }
+        }
 }
