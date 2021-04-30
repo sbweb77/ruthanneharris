@@ -10,6 +10,11 @@
 
 }
 
+::selection{
+  background-color: var(--rd);
+  color: var(--w);
+}
+
 body{
 	font-family: "Raleway", sans-serif !important;
   margin: 0;
